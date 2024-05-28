@@ -584,7 +584,7 @@ function addContainTaiKhoan() {
 
             <div class="tab-content">
                 <div id="login">
-                    <h1>Chào mừng bạn trở lại!</h1>
+                    <h1>Đăng Nhập</h1>
 
                     <form onsubmit="return logIn(this);">
 
