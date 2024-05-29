@@ -35,69 +35,52 @@
     <section style="min-height: 85vh">
         <script> addHeader(); </script>
 
-        <div class="body-lienhe">
-            <div class="lienhe-header">Liên hệ</div>
-            <div class="lienhe-info">
-                <div class="info-left">
-                    <p>
-                        <h2 style="color: gray"> CÔNG TY CỔ PHẦN Nghia - GROUP </h2><br />
-                        <b>Địa chỉ:</b> CellphoneS 369 Nguyễn Văn Linh, Thạc Gián, Thanh Khê, Đà Nẵng<br /><br />
-                        <b>Telephone:</b> 0123456789<br /><br />
-                        <b>Hotline:</b> 097777777 - CSKH: 028 9996 777<br /><br />
-                        <b>Website:</b> <a href="https://github.com/tnghia05/web-demo">Github</a> <br /><br />
-                        <b>E-mail:</b> DoAn@gmail.com<br /><br />
-                        <b>Mã số thuế:</b> 01 02 03 04 05<br /><br />
-                        <b>Tài khoản ngân hàng :</b><br /><br />
-                        <b>Số TK:</b> 060008086888 <br /><br />
-                        <b>Tại Ngân hàng:</b> Agribank Chi nhánh Đà nẵng<br /><br /><br /><br />
-                        <b>Quý khách có thể gửi liên hệ tới chúng tôi bằng cách hoàn tất biểu mẫu dưới đây. Chúng tôi
-                            sẽ trả lời thư của quý khách, xin vui lòng khai báo đầy đủ. Hân hạnh phục vụ và chân thành
-                            cảm ơn sự quan tâm, đóng góp ý kiến đến Smartphone Store.</b>
-                    </p>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text-gray">CÔNG TY CỔ PHẦN Nghia - GROUP</h2>
+                    <p><b>Địa chỉ:</b> CellphoneS 369 Nguyễn Văn Linh, Thạc Gián, Thanh Khê, Đà Nẵng</p>
+                    <p><b>Telephone:</b> 0123456789</p>
+                    <p><b>Hotline:</b> 097777777 - CSKH: 028 9996 777</p>
+                    <p><b>Website:</b> <a href="https://github.com/tnghia05/web-demo">Github</a></p>
+                    <p><b>E-mail:</b> DoAn@gmail.com</p>
+                    <p><b>Mã số thuế:</b> 01 02 03 04 05</p>
+                    <p><b>Tài khoản ngân hàng :</b></p>
+                    <p><b>Số TK:</b> 060008086888</p>
+                    <p><b>Tại Ngân hàng:</b> Agribank Chi nhánh Đà nẵng</p>
+                    <p>Quý khách có thể gửi liên hệ tới chúng tôi bằng cách hoàn tất biểu mẫu dưới đây. Chúng tôi sẽ trả lời thư của quý khách, xin vui lòng khai báo đầy đủ. Hân hạnh phục vụ và chân thành cảm ơn sự quan tâm, đóng góp ý kiến đến Smartphone Store.</p>
                 </div>
-              
-            </div>
-            <div class="lienhe-info">
-
-                <div class="guithongtin">
-                    <p style="font-size: 22px; color: gray">Gửi thông tin liên lạc cho chúng tôi: </p>
-                    <hr />
-                    <form name="formlh" onsubmit="return nguoidung()">
-                        <table cellspacing="10px">
-                            <tr>
-                                <td>Họ và tên</td>
-                                <td><input type="text" name="ht" size="40" maxlength="40" placeholder="Họ tên"
-                                        autocomplete="off" required></td>
-                            </tr>
-                            <tr>
-                                <td>Điện thoại liên hệ</td>
-                                <td><input type="text" name="sdt" size="40" maxlength="11" minlength="10" placeholder="Điện thoại"
-                                        required></td>
-                            </tr>
-                            <tr>
-                                <td>Địa chỉ Email</td>
-                                <td><input type="email" name="em" size="40" placeholder="Email" autocomplete="off"
-                                        required></td>
-                            </tr>
-                            <tr>
-                                <td>Tiêu đề</td>
-                                <td><input type="text" name="tde" size="40" maxlength="100" placeholder="Tiêu đề"
-                                        required>
-                            </tr>
-                            <tr>
-                                <td>Nội dung</td>
-                                <td><textarea name="nd" rows="5" cols="44" maxlength="500" wrap="physical"
-                                        placeholder="Nội dung liên hệ" required></textarea></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><button type="submit">Gửi thông tin liên hệ</button></td>
-                            </tr>
-                        </table>
-                    </form>
+                <div class="col-md-6">
+                    <div class="contact-form-container p-4">
+                        <p class="contact-header">Gửi thông tin liên lạc cho chúng tôi:</p>
+                        <hr />
+                        <form name="formlh" onsubmit="return nguoidung()">
+                            <div class="mb-3">
+                                <label for="ht" class="form-label">Họ và tên</label>
+                                <input type="text" id="ht" name="ht" class="form-control" placeholder="Họ tên" autocomplete="off" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="sdt" class="form-label">Điện thoại liên hệ</label>
+                                <input type="text" id="sdt" name="sdt" class="form-control" placeholder="Điện thoại" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="em" class="form-label">Địa chỉ Email</label>
+                                <input type="email" id="em" name="em" class="form-control" placeholder="Email" autocomplete="off" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tde" class="form-label">Tiêu đề</label>
+                                <input type="text" id="tde" name="tde" class="form-control" placeholder="Tiêu đề" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nd" class="form-label">Nội dung</label>
+                                <textarea id="nd" name="nd" class="form-control" rows="5" placeholder="Nội dung liên hệ" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-primary w-100">Gửi thông tin liên hệ</button>
+                            </div>
+                        </form>
+                    </div>              
                 </div>
-               
-
             </div>
         </div>
     </section>
@@ -105,10 +88,7 @@
     <div class="footer">
         <div class="container my-5">
             <!-- Footer -->
-            <footer
-                    class="text-center text-lg-start text-white"
-                    style="background-color: #8b9099"
-                    >
+            <footer class="text-center text-lg-start text-white" style="background-color: #8b9099">
               <!-- Grid container -->
               <div class="container p-4 pb-0">
                 <!-- Section: Links -->
@@ -231,64 +211,29 @@
                 <!-- Section: Social media -->
                 <section class="mb-4 text-center">
                   <!-- Facebook -->
-                  <a
-                     class="btn btn-outline-light btn-floating m-1"
-                     href="#!"
-                     role="button"
-                     ><i class="fa fa-facebook-f"></i
-                    ></a>
-          
+                  <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-facebook-f"></i></a>
                   <!-- Twitter -->
-                  <a
-                     class="btn btn-outline-light btn-floating m-1"
-                     href="#!"
-                     role="button"
-                     ><i class="fa fa-twitter"></i
-                    ></a>
-          
+                  <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-twitter"></i></a>
                   <!-- Google -->
-                  <a
-                     class="btn btn-outline-light btn-floating m-1"
-                     href="#!"
-                     role="button"
-                     ><i class="fa fa-google"></i
-                    ></a>
-          
+                  <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-google"></i></a>
                   <!-- Instagram -->
-                  <a
-                     class="btn btn-outline-light btn-floating m-1"
-                     href="#!"
-                     role="button"
-                     ><i class="fa fa-instagram"></i
-                    ></a>
-          
-                
+                  <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-instagram"></i></a>
                   <!-- Github -->
-                  <a
-                     class="btn btn-outline-light btn-floating m-1"
-                     href="#!"
-                     role="button"
-                     ><i class="fa fa-github"></i
-                    ></a>
+                  <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-github"></i></a>
                 </section>
                 <!-- Section: Social media -->
               </div>
               <!-- Grid container -->
           
               <!-- Copyright -->
-              <div
-                   class="text-center p-3"
-                   style="background-color: rgba(0, 0, 0, 0.2)"
-                   >
+              <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
                 © 2024 Copyright:
-                <a class="text-white" href="https://mdbootstrap.com/"
-                   >Nghia</a
-                  >
+                <a class="text-white" href="https://mdbootstrap.com/">Nghia</a>
               </div>
               <!-- Copyright -->
             </footer>
             <!-- Footer -->
-          </div>
+        </div>
     </div>
 
     <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>

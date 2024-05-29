@@ -18,6 +18,10 @@ td a:hover {
 	margin-left: 10px;
 	text-decoration: underline;
 }
+ td a:visited {
+	color: blue;
+
+ }
 
 /* những tr chẵn sẽ có màu khác */
 tr:nth-of-type(even) {background-color: #e6e4e4;}
@@ -30,6 +34,7 @@ tr:nth-of-type(even) {background-color: #e6e4e4;}
 	font-weight: bold;
 	background: rgb(216, 123, 17);
 }
+
 
 .col1 {
 	text-align: center;

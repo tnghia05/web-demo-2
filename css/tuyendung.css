@@ -1,26 +1,57 @@
-.body-tuyendung{
-	margin: 50px ;
+.body-tuyendung {
+	margin: 50px;
 	width: 90%;
 }
-.tuyendung-header{
+
+.tuyendung-header {
 	height: 40px;
 	font-weight: bold;
 	line-height: 40px;
 	padding-left: 10px;
 	background: pink;
 }
-.tuyendung-info{
+
+.tuyendung-info {
 	margin: 10px;
 }
-.tieude{
+
+.tieude {
 	color: #0C9;
 	text-align: center;
 	font-size: 28px;
 }
-.tuyendung-noidung{
-	margin:10px 0 15px 25px;
+
+.tuyendung-noidung {
+	margin: 10px 0 15px 25px;
 }
-ul li span{
+
+ul li span {
 	font-weight: bold;
 	color: red;
+}
+
+footer {
+	background-color: #8b9099;
+}
+
+footer .text-white {
+	color: #ffffff !important;
+}
+
+footer a {
+	color: #ffffff !important;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+#goto-top-page {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 24px;
+	cursor: pointer;
+	display: none;
 }
