@@ -1,6 +1,6 @@
 .page-gt {
-	width: 80%;
-	margin: 50px 0 150px 100px;
+	width: 100%;
+	margin: 50px 0 150px 0px;
 }
 
 .page-header {
@@ -13,4 +13,128 @@
 .page-info {
 	font-size: 15px;
 	margin-top: 20px;
+}
+.about__container {
+	width: 100%;
+    min-height: calc(100vh - 580px);
+    font-family: Inter;
+    color: #141414;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about_img{
+	padding-left: calc(50vw - 628px);
+    margin-right: 32px;
+}
+.about_wrapper{
+	width: 100%;
+    min-height: 368px;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    background: #fff;
+    overflow: hidden;
+}
+ 
+.about_wrapper-img{
+	width: 540px;
+    padding-top: 90px;
+    padding-right: 152px;
+    position: relative;
+}
+.about_img-top {
+	width: 345px;
+    height: 263px;
+    position: absolute;
+    top: 24px;
+    right: 0;
+    z-index: 2;
+}
+.about_header {
+    display: flex;
+    margin-bottom: 104px;
+}
+.about_info {
+    display: flex;
+    background: #ce2c34;
+    border-radius: 0 0 0 16px;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;}
+.about_title{
+	font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 16px;
+    padding-left: 24px;
+    font-weight: 700;
+}
+.about__header-detail{
+	font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+    padding-left: 24px;
+    padding-right: calc(50vw - 628px);
+}
+.about__header-logo {
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px 36px 5px;
+	border-color: #ce2c34;
+}
+
+.about__header-logo1 {
+    margin-right: 32px;
+    cursor: pointer;
+    height: 40px;
+	padding-bottom: 10px;
+}
+ /* Styles for mobile */
+@media (max-width: 768px) {
+	.about_img {
+		float: none;
+		width: 100%;
+	}
+
+	.about__header-detail {
+		width: 100%;
+	}
+
+	p {
+		font-size: 16px;
+	}
+} 
+@media (max-width: 600px){
+	.about__header-detail {
+		width: 100%;
+	}
+	.about_img {
+		padding-left: 0;
+	}
+	.about_wrapper-img {
+		width: 100%;
+		padding-right: 0;
+	}
+	.about_header {
+		flex-direction: column;
+	}
+	.about_info {
+		border-radius: 0;
+	}
+	.about_title {
+		font-size: 24px;
+		line-height: 32px;
+	}
+	.about__header-detail {
+		font-size: 14px;
+		line-height: 22px;
+		margin-bottom: 24px;
+	}
+	.about__header-logo {
+		padding: 3px 16px 5px;
+	}
+	.about__header-logo1 {
+		margin-right: 16px;
+	}
 }
