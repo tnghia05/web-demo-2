@@ -231,3 +231,12 @@
   margin-top: -20px;
   text-align: right;
 }
+.error-border {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 5px;
+}
