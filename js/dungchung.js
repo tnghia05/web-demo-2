@@ -570,7 +570,7 @@ function addFooter() {
     </div>`);
 }
 
-// Thêm contain Taikhoan
+// Thêm contain Taikhoan trang chu
 function addContainTaiKhoan() {
     document.write(`
 	<div class="containTaikhoan">
