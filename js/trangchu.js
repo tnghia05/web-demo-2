@@ -681,7 +681,6 @@ function hideSanPhamKhongThuoc(list) {
 		if (hide) hideLi(allLi[i]);
 	}
 }
-// Thêm contain Taikhoan trang chu
 function addContainTaiKhoan() {
     document.write(`
 	<div class="containTaikhoan">
